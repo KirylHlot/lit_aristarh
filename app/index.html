@@ -28,7 +28,52 @@
   <link rel="stylesheet" href="css/main.min.css">
  </head>
 
-<body class="main">  
+<body class="main body">  
+
+  <img src="img/burger.png" alt="burger" class="burger">
+
+  <nav class="main_nav">
+    <img src="img/close_button.png" class="close_button">
+    <img src="img/logo.png" alt="logo" class="logo">
+    <ul class="navigation">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Публикации</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Фотогалере</a></li>
+      <li><a href="#">Об авторе</a></li>
+      <li><a href="#">Обратная связь</a></li>
+    </ul>
+    <form class="form-inline" action="/rezultatyi-poiska.html" method="get">
+      <input class="form-control" type="text" placeholder="Поиск по сайту" aria-label="Поиск" name="search" id="search" required="">
+      <button class="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+    <div class="phone_wrapper">
+      <a href="tel:+79777066299">+7 977 706-62-99</a>
+    </div>
+    <div class="adress">
+      г.Москва, Нижний проезд, 
+      <br>д21, кв 231
+    </div>
+    <ul class="socline">
+      <li><a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+    <a href="#" target="_blank" class="nusic_project_wrapper">
+      <img src="img/nusic_project.png" alt="nusic project icon">
+    </a>
+    <ul class="site_wrapper">
+      <li>
+        <img src="img/ariswings.png" alt="ariswings">
+        <a href="https://ariswings.ru" target="_blank">ariswings.ru</a>
+      </li>      
+      <li>
+        <img src="img/arisnet.png" alt="arisnet">
+        <a href="https://arisstudio.ru" target="_blank">arisstudio.ru</a>
+      </li>
+    </ul>
+  </nav>
+
   <header class="header">
     <div class="top_header">
       <div class="img_wrapper">
@@ -62,8 +107,368 @@
     <img src="img/romb5.png" alt="romb" class="romb5">
     <img src="img/smoke_top_right.png" alt="smoke" class="smoke1">
     <img src="img/smoke_top_right1.png" alt="smoke" class="smoke2">
-    <img src="img/double_angle_down.png" alt="double angle down" class="double_angle_down">
+    <a href="#"><img src="img/double_angle_down.png" alt="double angle down" class="double_angle_down"></a>
   </header>
+
+  <div class="presection_wrapper" style="
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/pretitle_block_bg_articles.jpg');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  ">
+    <div class="title">Публикации</div>
+  </div>
+
+  <section class="articles">
+    <div class="articles_wrapper">
+      <h2 class="section_title">Публикации</h2>
+        <div class="articles_inner_wrapper">
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple1.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple2.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple3.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple4.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <a href="#" class="button">
+          <span>Список публикаций</span>
+          <div class="left_shape"></div>
+          <div class="right_shape"></div>
+        </a>
+
+      <h2 class="section_title">Аудиокниги</h2>
+        <div class="articles_inner_wrapper">
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple1.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple3.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+        </div>
+
+        <a href="#" class="button">
+          <span>Список публикаций</span>
+          <div class="left_shape"></div>
+          <div class="right_shape"></div>
+        </a>
+
+      <h2 class="section_title">Купить</h2>
+        <div class="articles_inner_wrapper">
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple3.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>          
+
+          <a href="#" class="articles_item">
+            <div class="left_column">
+              <div class="articles_img_wrapper">
+                <img src="img/exemple4.jpg" alt="photo" class="articles_main_img">
+              </div>
+              <div class="bottom_sq"></div>
+            </div>
+            <div class="right_column">
+              <div class="content_wrapper">
+                <ul class="info_line">
+                  <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="date">20.09.2019г.</span>
+                  </li>                  
+                  <li>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span class="tag">Рассказы</span>
+                  </li>
+                </ul>
+                <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
+                <div class="blue_line"></div>
+                <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
+                <div class="button_publication">К публикации</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <a href="#" class="button">
+          <span>Список публикаций</span>
+          <div class="left_shape"></div>
+          <div class="right_shape"></div>
+        </a>
+
+    </div>
+    <img src="img/smoke2.png" alt="smoke" class="smoke2">
+    <img src="img/smoke3.png" alt="smoke" class="smoke3">
+  </section>
+
+  <div class="presection_wrapper" style="
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/pretitle_block_bg_photo.jpg');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  ">
+    <div class="title">Новости</div>
+  </div>
+
+  <section class="news">
+    <div class="news_wrapper">
+      <h2 class="section_title">Новости</h2>
+      <div class="news_inner_wrapper">
+        <div class="left_column">
+
+          <a href="#" class="news_item">
+            <div class="img_wrapper_news_thumb">
+              <div class="date_wrapper">
+                <div class="blue_sq"></div>
+                <div class="date">20</div>
+                <div class="month_and_year">
+                  <span class="month">10</span><div class="span year">19</div>
+                </div>
+              </div>
+              <img src="img/exemple1.jpg" alt="news thumb" class="news_thumb">
+            </div>
+            <div class="content_wrapper">
+              <div class="title">Далеко-далеко за словесными горами в стране, гласных и согласных</div>
+              <div class="blue_line"></div>
+              <div class="content">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заманивший последний бросил имени она но большой lorem его строчка то власти текста, о, заголовок, ведущими безопасную подзаголовок, он предупредила.</div>
+              <div class="news_button">Полностью</div>
+            </div>
+          </a>          
+
+          <a href="#" class="news_item">
+            <div class="img_wrapper_news_thumb">
+              <div class="date_wrapper">
+                <div class="blue_sq"></div>
+                <div class="date">20</div>
+                <div class="month_and_year">
+                  <span class="month">10</span><div class="span year">19</div>
+                </div>
+              </div>
+              <img src="img/exemple2.jpg" alt="news thumb" class="news_thumb">
+            </div>
+            <div class="content_wrapper">
+              <div class="title">Далеко-далеко за словесными горами в стране, гласных и согласных</div>
+              <div class="blue_line"></div>
+              <div class="content">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заманивший последний бросил имени она но большой lorem его строчка то власти текста, о, заголовок, ведущими безопасную подзаголовок, он предупредила.</div>
+              <div class="news_button">Полностью</div>
+            </div>
+          </a>          
+
+          <a href="#" class="news_item">
+            <div class="img_wrapper_news_thumb">
+              <div class="date_wrapper">
+                <div class="blue_sq"></div>
+                <div class="date">20</div>
+                <div class="month_and_year">
+                  <span class="month">10</span><div class="span year">19</div>
+                </div>
+              </div>
+              <img src="img/exemple3.jpg" alt="news thumb" class="news_thumb">
+            </div>
+            <div class="content_wrapper">
+              <div class="title">Далеко-далеко за словесными горами в стране, гласных и согласных</div>
+              <div class="blue_line"></div>
+              <div class="content">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заманивший последний бросил имени она но большой lorem его строчка то власти текста, о, заголовок, ведущими безопасную подзаголовок, он предупредила.</div>
+              <div class="news_button">Полностью</div>
+            </div>
+          </a>
+
+        </div>
+        <div class="right_column">
+          <a href="#" class="img_wrapper_news_main">
+            <img src="img/exemple4.jpg" alt="news main" class="news_main_img">
+            <div class="date_wrapper">
+              <div class="blue_sq"></div>
+              <div class="date">20</div>
+              <div class="month_and_year">
+                <span class="month">10</span><div class="span year">19</div>
+              </div>
+            </div>
+          </a>
+          <div class="title">Заголовок новости главная страница пускай будет 2 строчки</div>
+          <div class="blue_line"></div>
+          <div class="content">
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Агенство страна взгляд родного не, власти. Буквенных себя послушавшись бросил, коварный вершину свой. Переулка оксмокс по всей себя власти коварных пунктуация!</p>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Агенство страна взгляд родного не, власти. Буквенных себя послушавшись бросил, коварный вершину свой. Переулка оксмокс по всей себя власти коварных пунктуация!</p>
+          </div>
+          <a href="#" class="news_button">Полностью</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
   <script src="js/scripts.min.js"></script>  
 </body>
 </html>

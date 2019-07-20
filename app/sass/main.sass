@@ -994,8 +994,171 @@ body
 				font-family: centuryGothic
 				font-size: 18px
 
+.magazine
+	padding: 90px 0
+	background: url(../img/magazine_bg1.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	overflow: hidden
+	border-bottom: 2px solid $accent
+	.magazine_wrapper
+		width: 75%
+		margin: auto
+		z-index: 2
+		position: relative
+		.magazine_carousel
+			.owl-nav
+				.owl-prev, .owl-next
+					position: absolute
+					width: 45px
+					height: 45px
+					border-radius: 50%
+					background-color: $bgcolor
+					font-size: 26px
+					color: $accent
+					top: 45%
+				.owl-prev
+					left: -20px
+				.owl-next
+					right: -20px
+			.magazine_carousel_item
+				margin: 0 32px
+				cursor: pointer
+				.magazine_carousel_img_wrapper
+					height: 300px
+					position: relative
+					overflow: hidden
+					display: flex
+					justify-content: center
+					align-items: center
+					margin-bottom: 16px
+					.magazine_carousel_img
+						position: absolute
+						width: 100%
+						height: auto
+						z-index: 1
+					.bg_accent_sq
+						position: absolute
+						z-index: 2
+						width: 250px
+						height: 350px
+						background-color: $accent
+						transform: rotate(45deg)
+						right: -140px
+						bottom: -180px
+					.price_wrapper
+						position: absolute
+						z-index: 3
+						right: 40px
+						bottom: 24px
+						.icon_bg
+							width: 65px
+							height: 65px
+							background-color: $white
+							transform: rotate(45deg)
+							display: flex
+							justify-content: center
+							align-items: center
+							border: 2px solid $accent
+							.fa
+								transform: rotate(-45deg)
+								color: $accent
+								font-size: 32px
+						.price_count
+							position: relative
+							bottom: -16px
+							text-align: center
+							color: $bgcolor
+							font-weight: bold
+				.h3_title
+					font-size: 20px
+					font-weight: bold
+					padding: 0 24px
+					text-align: center
 
 
+.footer
+	padding: 80px 0
+	background-color: $bgcolor
+	.footer_wrapper
+		width: 80%
+		margin: auto
+		height: auto
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.footer_column
+			width: 15%
+			&.footer_insta_img
+				.footer_insta_img_a
+					display: block
+					position: relative
+					height: 220px
+					width: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					overflow: hidden
+					.insta_img_footer
+						position: absolute
+						width: 100%
+						height: auto
+			a
+				display: flex
+				justify-content: flex-start
+				align-items: center
+			.navigation
+				li
+					font-size: 18px
+					margin-bottom: 8px
+			.links_list
+				a
+					font-size: 18px
+					display: flex
+					align-items: center
+					margin-bottom: 8px
+					.insta_img_footer
+						margin-right: 8px
+				.footer_socline
+					display: flex
+					flex-direction: row
+					align-items: center
+					margin-bottom: 8px
+					li
+						margin-right: 24px
+			.footer_form
+				width: 100%
+				.form_title
+					font-size: 18px
+					font-weight: bold
+					margin-bottom: 16px
+				input, textarea
+					width: 100%
+					height: 45px
+					border: none
+					border-bottom: 1px solid $accent
+					background-color: $bgcolor
+					margin-bottom: 16px
+					color: $white
+				textarea
+					height: 80px
+				.form_button
+					width: 40px
+					height: 40px
+					border: 1px solid $accent
+					display: flex
+					justify-content: center
+					align-items: center
+					transform: rotate(45deg)
+					margin-left: auto
+					cursor: pointer
+					img
+						transform: rotate(-45deg)
+						width: 28px
+						height: auto
+						position: relative
+						left: -2px
 
 
 

@@ -6,7 +6,7 @@
 	color: $grey
 
 ::selection
-	background-color: $popup_bg
+	background-color: $accent
 	color: $text
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
@@ -568,37 +568,439 @@ body
 		right: 0
 		z-index: 1
 
+
+
 .news
+	padding: 90px 0
+	background: url(../img/articles_bg.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	overflow: hidden
+	.smoke22
+		position: absolute
+		width: 20vw
+		left: 10%
+		bottom: 20%
+	.smoke33
+		position: absolute
+		width: 20vw
+		right: 5%
+		top: 20%
 	.news_wrapper
+		width: 70%
+		margin: auto
+		position: relative
+		z-index: 2
 		.news_inner_wrapper
+			width: 100%
+			height: auto
+			display: flex
+			flex-direction: row
+			justify-content: space-between
 			.left_column
+				width: 64%
 				.news_item
+					width: 100%
+					min-height: 300px
+					background-color: $popup_bg
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					margin-bottom: 24px
+					&:hover
+						color: inherit
+						.img_wrapper_news_thumb
+							.news_thumb
+								filter: none
+						.content_wrapper
+							.title
+								color: $accent
+							.news_button
+								color: $accent
 					.img_wrapper_news_thumb
+						width: 48%
+						min-height: 300px
+						height: auto
+						overflow: hidden
+						display: flex
+						justify-content: center
+						align-items: center
+						position: relative
 						.date_wrapper
 						.news_thumb
+							position: absolute
+							width: 100%
+							height: auto
+							-webkit-filter: grayscale(1)
+							filter: grayscale(1)
+							transition: all .5s
 					.content_wrapper
+						width: 48%
+						padding: 16px 16px 16px 0
+						font-family: centuryGothic
 						.title
-						.blue_line
+							font-size: 20px
+							font-weight: 700
+							margin-bottom: 8px
+							padding-bottom: 8px
+							margin-bottom: 8px
+							border-bottom: 2px solid $accent
 						.content
-						.news_button        
+							margin-bottom: 24px
+						.news_button
+							width: 250px
+							height: 45px
+							padding: 8px 16px
+							display: flex
+							justify-content: flex-end
+							align-items: center
+							margin-left: auto
+							position: relative
+							font-weight: bold
+							&:after
+								content: ""
+								display: block
+								position: absolute
+								right: 0
+								width: 2px
+								height: 45px
+								background-color: $accent
+							&:before
+								content: ""
+								display: block
+								position: absolute
+								right: 0
+								width: 45px
+								height: 2px
+								background-color: $accent
+								bottom: 0
 			.right_column
+				width: 32%
+				background-color: $popup_bg
+				height: 100%
+				padding-bottom: 16px
+				font-family: centuryGothic
+				&:hover
+					.img_wrapper_news_main
+						.news_main_img
+							filter: none
 				.img_wrapper_news_main
+					width: 100%
+					height: 300px
+					position: relative
+					display: flex
+					justify-content: center
+					align-items: center
+					overflow: hidden
+					margin-bottom: 16px
+					&:hover
+						color: inherit
 					.date_wrapper
 					.news_main_img
+						position: absolute
+						width: 100%
+						height: auto
+						-webkit-filter: grayscale(.3)
+						filter: grayscale(.3)
+						transition: all .5s
 				.title
+					padding: 0 16px
+					font-size: 22px
+					margin-bottom: 16px
+					font-weight: bold
 				.blue_line
+					width: 100%
+					height: 1px
+					background-color: $accent
+					margin-bottom: 16px
 				.content
+					padding: 0 16px
+					margin-bottom: 16px
 					p
+						margin-bottom: 8px
 				.news_button
-
-
-.news_button
+					width: 190px
+					height: 45px
+					margin-left: auto
+					font-weight: bold
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					padding: 8px 16px
+					position: relative
+					margin-right: 16px
+					&:after
+						content: ""
+						display: block
+						position: absolute
+						right: 0
+						width: 2px
+						height: 45px
+						background-color: $accent
+					&:before
+						content: ""
+						display: block
+						position: absolute
+						right: 0
+						width: 40px
+						height: 2px
+						background-color: $accent
+						bottom: 0
 
 .date_wrapper
+	width: 50px
+	height: 50px
+	position: absolute
+	top: 16px
+	left: 16px
+	z-index: 2
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	font-family: centuryGothic
 	.blue_sq
+		width: 50px
+		height: 50px
+		transform: rotate(45deg)
+		background-color: $accent
+		position: absolute
+		z-index: 1
 	.date
+		position: relative
+		z-index: 2
+		font-weight: bold
+		color: $white
 	.month_and_year
-		.month
-		.year
+		position: relative
+		z-index: 2
+		display: flex
+		align-items: center
+		justify-content: center
+		color: $bgcolor
+
+.fotogalary
+	padding: 90px 0
+	background: url(../img/fotog_bg.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	overflow: hidden
+	.smoke_top_right1
+		position: absolute
+		width: 25vw
+		z-index: 1
+		left: 5%
+		bottom: 20%
+	.smoke_bottom
+		position: absolute
+		width: 25vw
+		z-index: 1
+		right: 20%
+		top: 4px
+	.fotogalary_wrapper
+		width: 75%
+		margin: auto
+		z-index: 2
+		position: relative
+		.fotogalary_carousel
+			width: 100%
+			margin-bottom: 32px
+			.fotogalary_carousel_item
+				height: 360px
+				position: relative
+				display: flex
+				padding: 32px
+				display: flex
+				justify-content: center
+				align-items: center
+				overflow: hidden
+				&:hover
+					.left_sq
+						left: 32px
+					.right_sq
+						right: 32px
+					img
+						filter: none
+					.tip_wrapper
+						bottom: 0
+				.left_sq
+					position: absolute
+					z-index: 2
+					width: 45px
+					height: 45px
+					left: -100px
+					top: 32px
+					border-top: 3px solid $accent
+					border-left: 3px solid $accent
+					transition: all .5s
+				.right_sq
+					position: absolute
+					z-index: 2
+					width: 45px
+					height: 45px
+					bottom: 32px
+					right: -100px
+					border-right: 3px solid $accent
+					border-bottom: 3px solid $accent
+					transition: all .5s
+				.tip_wrapper
+					position: relative
+					bottom: -400px
+					z-index: 3
+					padding: 32px
+					width: 80%
+					padding: 40px 24px
+					background-color: $text
+					color: $bgcolor
+					font-weight: bold
+					font-size: 18px
+					align-self: flex-end
+					margin-bottom: 16px
+					transition: all .5s
+				img    
+					position: absolute
+					width: 100%
+					height: auto
+					-webkit-filter: grayscale(.3)
+					filter: grayscale(.3)
+					transition: all .5s
+		.navigation_line
+			width: 100%
+			height: auto
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: space-around
+			position: relative
+			margin-bottom: 24px
+			.left_arrow, .right_arrow
+				cursor: pointer
+				padding: 16px
+
+.insta_img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 300px
+	.insta_img_wrapper
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		height: 300px
+		width: 100%
+		overflow: hidden
+		.instagram_img
+			position: absolute
+			width: 100%
+			height: auto
+
+.about
+	padding: 90px 0
+	background: url(../img/about_bg.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	overflow: hidden
+	.about_wrapper
+		width: 75%
+		margin: auto
+		z-index: 2
+		position: relative
+		.first_wrapper
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin-bottom: 32px
+			position: relative
+			.swipe
+				display: none
+				position: absolute
+				left: 0
+				bottom: -32px
+				z-index: 2
+				color: $accent
+				.fa
+					font-size: 20px
+			.first_wrapper_text_content
+				-webkit-column-count: 2
+				-moz-column-count: 2
+				column-count: 2
+				-webkit-column-span: all
+				column-span: all
+				-webkit-column-gap: 30px
+				-moz-column-gap: 30px 
+				column-gap: 30px
+				width: 68%
+				font-family: centuryGothic
+				font-size: 18px
+				position: relative
+				p
+					margin-bottom: 8px
+					b
+						font-weight: bold
+			.first_wrapper_img
+				width: 26%
+				img
+					width: 100%
+					height: auto
+		.second_wrapper
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.left_part
+				width: 60%
+				position: relative
+				.about_carousel
+					.carousel_item
+						height: 400px
+						position: relative
+						overflow: hidden
+						display: flex
+						justify-content: center
+						align-items: center
+						z-index: 1
+						img
+							position: absolute
+							width: 100%
+							height: auto
+				.about_carousel_naw_line
+					position: absolute
+					right: 0
+					bottom: 0
+					z-index: 2
+					display: flex
+					flex-direction: row
+					.arr_left, .arr_right
+						width: 45px
+						height: 45px
+						background-color: $popup_bg
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-items: center
+						color: $accent
+						font-size: 24px
+					.arr_left
+						border-right: 1px solid $bgcolor
+			.right_part
+				align-self: flex-end
+				width: 30%
+				font-family: centuryGothic
+				font-size: 18px
+
+
+
+
+
+
+
+
+
 
 @import "media" // Always at the end

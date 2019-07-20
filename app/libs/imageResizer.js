@@ -2,7 +2,6 @@
 //
 //set css for wrapper_block:
 // display: flex; justify-content: center; align-items: center
-//
 //set css for image:
 //width: 100%; height: auto;
 //
@@ -10,6 +9,7 @@
 //window.onload = function() {
 //  setMaxHeightByWrapper ("wrapper_class", "image_class");
 //  setMaxHeightAllBlocks("blockClass");
+//  cutStringBySymbolCount("classname", count_of_symbol => Integer, "..." => true or false)
 //};
 
 function setMaxHeightByWrapper (wrapperClass, imgClass) {
@@ -53,7 +53,7 @@ function setMaxHeightByWrapper (wrapperClass, imgClass) {
   if (imgMass) {
     for (let i = 0; i < imgMass.length; i++) {
       if(imgMass[i].offsetHeight < maxHeight){
-        imgMass[i].style = "height: " + maxHeight + "px; width: auto;";
+        imgMass[i].style = "width: auto; height: " + maxHeight + "px;";
       }
     }
   } else {
@@ -82,4 +82,28 @@ function setMaxHeightAllBlocks (blockClass) {
     blockMass[i].style = "height:" + maxHeight + "px";
   }
 
+}
+
+
+function cutStringBySymbolCount(innerStringClass, count, isDotsNeed) {
+
+  let innerStringClass_mass = document.getElementsByClassName(innerStringClass);
+
+  for (var i = 0; i < innerStringClass_mass.length; i++) {
+    let flag = false;
+    let innerString = innerStringClass_mass[i].innerText;
+
+    if (innerStringClass_mass[i].innerText.length > count){
+        innerString = innerString.substring(0, count+1);
+    } else {
+      flag = true;
+    }
+
+    if (isDotsNeed && !flag) {
+      innerStringClass_mass[i].innerText = innerString + "...";
+    } else {
+      innerStringClass_mass[i].innerText = innerString;
+    }
+  }
+  return true;
 }

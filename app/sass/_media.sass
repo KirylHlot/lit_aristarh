@@ -8,9 +8,14 @@
 	.articles .articles_wrapper
 		width: 80%
 
+	.news .news_wrapper
+		width: 80%
 
+	.fotogalary .fotogalary_wrapper
+		width: 80%
 
-
+	.about .about_wrapper
+		width: 80%
 
 	.header .header_wrapper .slogan_wrapper .bottom_word
 		font-size: 130px
@@ -22,10 +27,14 @@
 	.articles .articles_wrapper
 		width: 90%
 
+	.news .news_wrapper
+		width: 90%
 
+	.fotogalary .fotogalary_wrapper
+		width: 90%
 
-
-
+	.about .about_wrapper
+		width: 90%
 
 	.header .header_wrapper
 		width: 100%
@@ -53,6 +62,12 @@
 
 	.presection_wrapper
 		height: 300px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_img
+		width: 30%
+
+	.about .about_wrapper .second_wrapper .right_part
+		width: 35%
 // @media (max-width:1500px)
 
 @media (max-width:1400px)
@@ -60,8 +75,14 @@
 	.articles
 		padding: 46px 0
 
+	.news
+		padding: 46px 0
 
+	.fotogalary
+		padding: 46px 0
 
+	.about
+		padding: 46px 0
 
 	.header .top_header .center_wrapper .main_h1
 		font-size: 20px
@@ -75,15 +96,31 @@
 	.articles .articles_wrapper .button
 		margin-bottom: 60px
 
+	.news .news_wrapper .news_inner_wrapper .right_column .img_wrapper_news_main
+		height: 260px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .title
+		font-size: 20px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		font-size: 16px
+
+
+
 // ≥1200px
 +media-breakpoint-down(lg)
 	//////////////////////////////////width: 95%
 	.articles .articles_wrapper
 		width: 95%
 
+	.news .news_wrapper
+		width: 95%
 
+	.fotogalary .fotogalary_wrapper
+		width: 95%
 
-
+	.about .about_wrapper
+		width: 95%
 
 
 	.header .header_wrapper .slogan_wrapper .bottom_word
@@ -132,6 +169,52 @@
 	.articles .articles_wrapper .articles_inner_wrapper .articles_item .right_column .content_wrapper .info_line li
 		font-size: 14px
 
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper .content
+		margin-bottom: 16px
+		font-size: 14px
+
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper .title
+		font-size: 18px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .title
+		font-size: 18px
+		margin-bottom: 8px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .content
+		font-size: 14px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .blue_line
+		margin-bottom: 8px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .content
+		margin-bottom: 8px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .news_button
+		height: 40px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .news_button:after
+		height: 34px
+		bottom: 0
+
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper .news_button:after
+		height: 32px
+		bottom: 0
+
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper .news_button
+		height: 40px
+
+	.news .news_wrapper .news_inner_wrapper .right_column .img_wrapper_news_main
+		margin-bottom: 8px
+
+	.section_title
+		font-size: 22px
+
+	.about .about_wrapper .second_wrapper .right_part
+		font-size: 16px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		font-size: 15px
+
 // ≥992px
 +media-breakpoint-down(md)
 	.header .header_wrapper .slogan_wrapper .bottom_word
@@ -163,16 +246,53 @@
 	.articles .articles_wrapper .button
 		margin-bottom: 32px
 
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .img_wrapper_news_thumb
+		width: 35%
+
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper
+		width: 63%
+
+	.news .news_wrapper .news_inner_wrapper .left_column
+		width: 55%
+
+	.news .news_wrapper .news_inner_wrapper .right_column
+		width: 43%
+
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item
+		margin-bottom: 16px
+
+	.fotogalary .fotogalary_wrapper .navigation_line .left_arrow, .fotogalary .fotogalary_wrapper .navigation_line .right_arrow
+		padding: 8px
+
+	.fotogalary .fotogalary_wrapper .navigation_line
+		margin-bottom: 16px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		column-count: 1
+		column-span: none
+		height: 350px
+		overflow: auto
+		position: relative
+
+	.about .about_wrapper .first_wrapper .swipe
+		display: block
+
+	.about .about_wrapper .second_wrapper .right_part
+		font-size: 15px
 // ≥768px
 +media-breakpoint-down(sm)
 	/////////////////////////////////////////////padding-top: 32px
 	.articles
 		padding: 32px 0
 
+	.news
+		padding: 32px 0	
 
+	.fotogalary
+		padding: 32px 0
 
-
-
+	.about
+		padding: 32px 0
 
 	.header .header_wrapper .slogan_wrapper .bottom_word
 		font-size: 46px
@@ -200,11 +320,45 @@
 	.articles .articles_wrapper .articles_inner_wrapper
 		margin-bottom: 0
 
+	.news .news_wrapper .news_inner_wrapper
+		flex-direction: column-reverse
+
+	.news .news_wrapper .news_inner_wrapper .right_column
+		width: 100%
+		margin-bottom: 16px
+
+	.news .news_wrapper .news_inner_wrapper .left_column
+		width: 100%
+
+	.section_title
+		margin-bottom: 24px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		font-size: 14px
+
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		width: 57%
+
+	.about .about_wrapper .first_wrapper .first_wrapper_img
+		width: 42%
+
+	.about .about_wrapper .second_wrapper .right_part
+		font-size: 14px
+
 // ≥576px
 +media-breakpoint-down(xs)
 	////////////////////////////////////////padding-top: 24px
 	.articles
 		padding-top: 24px
+
+	.news
+		padding-top: 24px		
+
+	.fotogalary
+		padding-top: 24px	
+
+	.about
+		padding-top: 24px	
 
 	.header .top_header .center_wrapper .main_h1:after, .header .top_header .center_wrapper .main_h1:before
 		display: none
@@ -291,16 +445,65 @@
 	.header .header_wrapper .slogan_wrapper .bottom_word .aristarh
 		width: 56vw
 
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item
+		flex-direction: column
+		justify-content: center
 
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .img_wrapper_news_thumb
+		width: 100%
+		height: 200px
+		min-height: 200px
 
+	.news .news_wrapper .news_inner_wrapper .left_column .news_item .content_wrapper
+		width: 100%
+		padding: 8px 0
 
+	.section_title
+		font-size: 20px
 
+	.news .news_wrapper .news_inner_wrapper .right_column .content
+		padding: 0 8px
 
+	.news .news_wrapper .news_inner_wrapper .right_column .title
+		font-size: 16px
+		padding: 0 8px
 
+	.news .news_wrapper .news_inner_wrapper .right_column .news_button
+		margin-right: 8px
 
+	.fotogalary .fotogalary_wrapper .fotogalary_carousel .fotogalary_carousel_item
+		height: 280px
 
+	.about .about_wrapper .first_wrapper
+		flex-direction: column-reverse
 
+	.about .about_wrapper .first_wrapper .first_wrapper_img
+		width: 100%
+		margin-bottom: 16px
 
+	.about .about_wrapper .first_wrapper .first_wrapper_text_content
+		width: 100%
+
+	.about .about_wrapper .first_wrapper .swipe
+		left: auto
+		bottom: -24px
+
+	.about .about_wrapper .first_wrapper
+		align-items: center
+
+	.about .about_wrapper .second_wrapper
+		flex-direction: column
+		justify-content: flex-start
+
+	.about .about_wrapper .second_wrapper .left_part
+		width: 100%
+		margin-bottom: 16px
+
+	.about .about_wrapper .second_wrapper .right_part
+		width: 100%
+
+	.about .about_wrapper .second_wrapper .left_part .about_carousel .carousel_item
+		height: 260px
 
 
 @media(max-height: 900px)

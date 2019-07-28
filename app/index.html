@@ -51,7 +51,7 @@
       <a href="tel:+79777066299">+7 977 706-62-99</a>
     </div>
     <div class="adress">
-      г.Москва, Нижний проезд ,
+      г.Москва, Нижний проезд,
       <br>д21, кв 231
     </div>
     <ul class="socline">
@@ -125,6 +125,7 @@
     <div class="articles_wrapper">
       <h2 class="section_title">Публикации</h2>
         <div class="articles_inner_wrapper">
+
           <a href="#" class="articles_item">
             <div class="left_column">
               <div class="articles_img_wrapper">
@@ -327,7 +328,7 @@
                 <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
                 <div class="blue_line"></div>
                 <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
-                <div class="button_publication">К публикации</div>
+                <div class="button_publication">Купить</div>
               </div>
             </div>
           </a>          
@@ -354,7 +355,7 @@
                 <h3 class="h3title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
                 <div class="blue_line"></div>
                 <div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись запятых, буквенных вопроса знаках безорфографичный рыбными буквоград коварный лучше ты, они запятой журчит продолжил о, жизни даже, свое алфавит!</div>
-                <div class="button_publication">К публикации</div>
+                <div class="button_publication">Купить</div>
               </div>
             </div>
           </a>
@@ -698,11 +699,11 @@
         <div class="links_list">
           <a href="https://ariswings.ru/" target="_blank">
             <img src="img/ariswings.png" alt="ariswings">
-            <span>ariswings.ru</span>
+            <span> ariswings.ru</span>
           </a>          
           <a href="https://arisstudio.ru/" target="_blank">
             <img src="img/arisnet.png" alt="arisstudio">
-            <span>arisstudio.ru</span>
+            <span> arisstudio.ru</span>
           </a>
           <ul class="footer_socline">
             <li>
@@ -724,8 +725,9 @@
           <input type="text" name="name" required placeholder="Ваше имя">
           <input type="text" name="phone" required placeholder="Телефон/e-mail">
           <textarea name="message" required placeholder="Сообщение"></textarea>
-          <div class="form_button"><img src="img/mail_icon.png" alt="mail icon"></div>
+          <button class="form_button"><img src="img/mail_icon.png" alt="mail icon"></button>
         </form>
+        <div class="footer_form_alert_done d-none">Ваше сообщение отправлено</div>
       </div>
       <div class="footer_column footer_insta_img">
         <a href="#" class="footer_insta_img_a">
@@ -735,9 +737,28 @@
     </div>
   </footer>
 
-<div class="magazine_popup">
+<div class="magazine_popup d-none">
   <div class="popup_wrapper">
-    
+    <div class="poopup_close_button">
+      <img src="img/close_button.png" alt="close button" class="close_button_popup">
+    </div>
+    <div class="popup_title">Заказать товар</div>
+    <div class="white_line"></div>
+    <div class="thank_line">Спасибо, что поддерживаете нас</div>
+    <div class="you_choise_wrapper">
+        <span class="cl_title">Вы выбрали:</span><span class="choise_title"></span>
+        <span class="cl_title">Стоимость:</span><span class="choise_сash"></span>
+    </div>
+    <div class="white_line"></div>
+    <form class="choise_form_wrapper">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="number" name="phone"  placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Сообщение (укажите, как с Вами лучше связаться для дальнейшей покупки товара)"></textarea>
+        <button class="button_letter"><img src="img/mail_icon.png" alt="mail send icon"></button>
+    </form>
+    <div class="formPopupAlertDone d-none">
+      Ваше сообщение отправлено!
+    </div>
   </div>
 </div>
 

@@ -39,6 +39,20 @@ a
 		color: $accent
 		text-decoration: none
 
+input
+	&[type="number"]
+		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+			-webkit-appearance: none
+			margin: 0
+		-moz-appearance: textfield
+		&:hover, &:focus
+			-moz-appearance: number-input
+	&[type=number]
+		&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+			-webkit-appearance: none
+			margin: 0
+
+
 section
 	position: relative
 	z-index: 10
@@ -115,53 +129,6 @@ body
 	height: 100vh
 	overflow: hidden
 	border-bottom: 2px solid $accent
-	.top_header
-		width: 100%
-		height: 80px
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		position: relative
-		z-index: 12
-		.img_wrapper
-			position: absolute
-			top: 0
-			left: 0
-			width: auto
-			height: auto
-			img
-		.center_wrapper
-			display: flex
-			flex-direction: column
-			align-items: center
-			.main_h1
-				font-size: 22px
-				font-weight: bold
-				margin-bottom: 16px
-				display: flex
-				justify-content: center
-				align-items: center
-				font-weight: 100
-				&:before, &:after
-					content: ""
-					display: block
-					width: 150px
-					height: 1px
-					background-color: $text
-					margin-right: 32px
-				&:after
-					margin-right: 0
-					margin-left: 32px
-			.socline
-				display: flex
-				flex-direction: row
-				align-items: center
-				justify-content: center
-				li
-					margin: 0 16px
-					.fa
-						font-size: 18px
 	.header_wrapper
 		width: 90%
 		height: 100%
@@ -241,6 +208,56 @@ body
 		width: 40px
 		margin-left: -20px
 		z-index: 20
+
+.top_header
+	width: 100%
+	height: 80px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	position: relative
+	z-index: 12
+	.img_wrapper
+		position: absolute
+		top: 0
+		left: 0
+		width: auto
+		height: auto
+		img
+	.center_wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		.main_h1
+			font-size: 22px
+			font-weight: bold
+			margin-bottom: 16px
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 100
+			&:before, &:after
+				content: ""
+				display: block
+				width: 150px
+				height: 1px
+				background-color: $text
+				margin-right: 32px
+			&:after
+				margin-right: 0
+				margin-left: 32px
+		.socline
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			li
+				margin: 0 16px
+				.fa
+					font-size: 18px
+
+
 
 .burger
 	position: fixed
@@ -1081,6 +1098,7 @@ body
 .footer
 	padding: 80px 0
 	background-color: $bgcolor
+	border-top: 3px solid $accent;
 	.footer_wrapper
 		width: 80%
 		margin: auto
@@ -1153,6 +1171,7 @@ body
 					transform: rotate(45deg)
 					margin-left: auto
 					cursor: pointer
+					background-color: transparent
 					img
 						transform: rotate(-45deg)
 						width: 28px
@@ -1161,9 +1180,347 @@ body
 						left: -2px
 
 
+.magazine_popup
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: rgba($black, .9)
+	z-index: 100
+	.popup_wrapper
+		width: 380px
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		background-color: $popup_bg
+		padding: 42px 0 24px
+		.poopup_close_button
+			position: absolute
+			right: 8px
+			top: 8px
+			cursor: pointer
+			padding: 8px
+		.popup_title
+			font-size: 26px
+			color: $text
+			text-align: center
+			margin-bottom: 8px
+		.white_line
+			width: 100%
+			height: 1px
+			background-color: $white
+			margin-bottom: 16px
+		.thank_line
+			padding: 0 16px;
+			font-size: 18px
+			width: 100%
+			text-align: left
+			margin-bottom: 8px
+		.you_choise_wrapper
+			text-align: left
+			font-size: 18px
+			margin-bottom: 16px
+			padding: 0 16px
+			text-align: left
+			width: 100%
+			.cl_title
+				display: block
+				color: $accent
+				display: block
+				margin-bottom: 8px
+				font-weight: bold
+		.choise_form_wrapper
+			width: 100%
+			height: auto;
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 0 16px
+		input, textarea
+			width: 100%
+			margin-bottom: 16px
+			border: none
+			border-color: transparent
+			border-bottom: 2px solid $accent
+			background-color: transparent
+			color: $white
+		input
+			height: 45px
+		textarea
+			height: 135px;
+			margin-bottom: 32px
+		.button_letter
+			background-color: transparent
+			width: 60px
+			height: 60px
+			transform: rotate(45deg)
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			border: 1px solid $accent
+			margin: 0 16px 16px auto;
+			img
+				transform: rotate(-45deg)
+		.formPopupAlertDone
+			font-size: 18px
+			font-weight: bold
+			color: $accent
+
+//archive
+.archive_header
+	width: 100%
+	height: 500px;
+	padding-top: 40px
+	border-bottom: 3px solid $accent
+	.archive_header_wrapper
+		width: 95%
+		height: 100%;
+		margin: auto;
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.content_header_wrapper
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			.title_h1
+				font-size: 64px
+				font-weight: bold
+				color: $accent
+				text-transform: uppercase
+				position: relative
+				top: -40px
+	.opacity_title
+		position: absolute
+		font-size: 120px
+		font-family: $impact
+		color: $accent
+		opacity: .1;
+		text-transform: uppercase
+		bottom: 0
+		left: 0
+
+
+.archive_content
+	padding: 50px 0;
+	.archive_content_wrapper
+		width: 65%
+		margin: auto;
+		margin-bottom: 50px
+		.archive_list_items
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-bottom: 32px
+
+
+.breadcrumb
+	display: flex
+	flex-direction: row
+	align-items: center
+	flex-wrap: wrap
+	margin-bottom: 50px
+	li
+		color: $accent
+		font-weight: bold
+		&:after
+			content: "/"
+			display: inline-block;
+			margin: 0 8px;
+		&:last-child
+			&:after
+				content: ""
+		&.active
+			color: $text
+
+
+.pagination-wrapper
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center;
+	.pagination
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		font-family: $centuryGothic
+		position: relative
+		width: auto
+		font-size: 18px
+		font-weight: bold
+		&:before
+			content: url('../img/pagin_left.png')
+			position: absolute
+			left: -24px
+			display: block
+		&:after
+			content: url('../img/pagin_right.png')
+			position: absolute
+			right: -24px
+			display: block
+		li
+			font-size: 18px
+			padding: 0 8px
+			&.page-item
+				&.disabled
+					display: none
+			a
+				&.page-link
+					&.active
+						color: $accent
+				span
+					&.sr-only
+						display: none;
 
 
 
 
+
+.articles_item
+	width: 47%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 64px
+	font-family: centuryGothic
+	&:hover
+		color: inherit
+		.left_column
+			.articles_img_wrapper
+				.articles_main_img
+					filter: none
+			.bottom_sq
+				left: -300px
+				&:after
+					left: 0
+		.right_column
+			.content_wrapper
+				.button
+					padding-right: 16px
+					padding-bottom: 6px
+					&:before
+						width: 100%
+						bottom: 0
+					&:after
+						height: 60px
+						bottom: 0
+	.left_column
+		width: 35%
+		height: auto
+		position: relative
+		overflow: hidden
+		.articles_img_wrapper
+			width: 100%
+			height: 350px
+			display: flex
+			justify-content: center
+			align-items: center
+			overflow: hidden
+			.articles_main_img
+				width: 100%
+				height: auto
+				-webkit-filter: grayscale(100)
+				filter: grayscale(100)
+				transition: all .5s
+		.bottom_sq
+			width: 100%
+			height: 16px
+			background-color: $accent
+			position: relative
+			left: 0
+			transition: left 1s ease-in-out
+			&:after
+				content: ""
+				position: relative
+				display: inline-block
+				width: 100%
+				height: 16px
+				background-color: $popup_bg
+				left: -100%
+				transition: left .5s
+	.right_column
+		width: 60%
+		height: 100%
+		display: flex
+		flex-direction: column
+		.content_wrapper
+			margin-top: auto
+			.info_line
+				display: flex
+				flex-direction: row
+				align-items: center
+				margin-bottom: 8px
+				li
+					margin-right: 16px
+					position: relative
+					padding-right: 16px
+					white-space: nowrap
+					&:last-child
+						&:after
+							display: none
+					&:after
+						content: ""
+						position: absolute
+						right: 0
+						top: 0
+						height: 100%
+						width: 1px
+						background-color: $white
+					.fa
+						color: $grey
+			.h3title
+				font-size: 22px
+				font-weight: bold
+				margin-bottom: 8px
+			.blue_line
+				width: 100%
+				height: 1px
+				background-color: $accent
+				margin-bottom: 8px
+			.description
+				margin-bottom: 24px
+			.button_publication
+				width: 100%
+				height: 45px
+				font-size: 18px
+				position: relative
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				padding-right: 16px
+				padding-bottom: 6px
+				outline: none
+				display: block
+				text-align: right
+				padding-top: 8px
+				&:before, &:after
+					content: ""
+					position: absolute
+					background-color: $accent
+					right: 0
+					transition: all 1.5s ease-in-out
+				&:before
+					width: 45px
+					height: 1px
+					bottom: 0
+				&:after
+					width: 1px
+					height: 45px
+					bottom: 0
+				&:focus
+					outline: none
 
 @import "media" // Always at the end

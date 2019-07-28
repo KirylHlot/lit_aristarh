@@ -167,7 +167,9 @@ about_carousel.on('dragged.owl.carousel', function(event) {
 })
 
 function setAboutCarouselContent() {
-	document.querySelector('.content_about').innerText = document.querySelector('.about_carousel').querySelector('.active').querySelector('.about_content').innerText;
+  if (document.querySelector('.about_content')){
+    document.querySelector('.content_about').innerText = document.querySelector('.about_carousel').querySelector('.active').querySelector('.about_content').innerText;
+  }
 }
 
 //magazine
@@ -189,3 +191,99 @@ $('.magazine_carousel').owlCarousel({
       }
    }
 });
+
+
+///popup form
+var magazine_popup = document.querySelector('.magazine_popup');
+var magazine_carousel_item_mass = document.getElementsByClassName('magazine_carousel_item');
+var close_button_popup = document.querySelector('.close_button_popup');
+var choise_form_wrapper = document.querySelector('.choise_form_wrapper');
+
+
+if (close_button_popup){
+  close_button_popup.onclick = function(){
+    hide_popup_magazine();
+  }
+}
+
+
+
+
+for (let i = 0; i <magazine_carousel_item_mass.length; i++) {
+  magazine_carousel_item_mass[i].addEventListener('click', function () {
+    show_popup_magazine(this);
+  });
+}
+
+function show_popup_magazine (elem) {
+  if (magazine_popup){
+    magazine_popup.querySelector(`.choise_title`).innerText = elem.querySelector(`.h3_title`).innerText;
+    magazine_popup.querySelector(`.choise_сash`).innerText = elem.querySelector(`.price`).innerText;
+    magazine_popup.classList.remove('d-none');
+  }
+
+}
+
+function hide_popup_magazine (elem) {
+  if (magazine_popup){
+    magazine_popup.classList.add('d-none');
+    magazine_popup.querySelector(`.choise_title`).innerText = "";
+    magazine_popup.querySelector(`.choise_сash`).innerText = "";
+  }
+
+}
+
+$(document).mouseup(function (e){
+	    let block = $(".popup_wrapper");
+	    if (!block.is(e.target)
+	        && block.has(e.target).length === 0) {
+          hide_popup_magazine();
+	    }
+	});
+
+$(document).ready(function() {
+   $(".choise_form_wrapper").submit(function() {
+      $.ajax({
+         type: "POST",
+         url: "magazine_popup.php",
+         data: $(this).serialize()
+      }).done(function() {
+         $(this).find("input, textarea").val("");
+         formPopupAlertDone();
+      }).fail(function() {
+        alert('Ошибка соединения');
+      });
+      return false;
+   });
+});
+
+function formPopupAlertDone() {
+  formPopupAlertDoneClass.classList.remove('d-none');
+  choise_form_wrapper.classList.add('d-none');
+}
+
+
+//footer form
+
+$(document).ready(function() {
+  $(".footer_form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "footer_popup.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input, textarea").val("");
+      formFooterAlertDone();
+    }).fail(function() {
+      alert('Ошибка соединения');
+    });
+    return false;
+  });
+});
+
+function formFooterAlertDone() {
+  document.querySelector('.footer_form').classList.add('d-none');
+  document.querySelector('.footer_form_alert_done').classList.remove('d-none');
+}
+
+
